@@ -5,15 +5,15 @@
      SPDX-License-Identifier: Apache-2.0
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="lineageos_system_label">LineageOS Sistemi</string>
+    <string name="lineageos_system_label">LunarisAOSP Sistemi</string>
     <string name="permlab_modifyProfiles">sistem profillerini değiştir</string>
     <string name="permdesc_modifyProfiles">Uygulamaya sistem profillerini değiştirme izni verir.</string>
     <string name="permlab_useHardwareFramework">donanım altyapısını kullan</string>
-    <string name="permdesc_useHardwareFramework">Uygulamanın Lineage donanım altyapısına erişimine izin verir.</string>
-    <string name="permlab_writeSettings">Lineage sistem ayarlarını değiştir</string>
-    <string name="permdesc_writeSettings">Bir uygulamaya Lineage sistem ayarlarını değiştirme izni verir.</string>
-    <string name="permlab_writeSecureSettings">Lineage güvenli sistem ayarlarını değiştir</string>
-    <string name="permdesc_writeSecureSettings">Bir uygulamaya Lineage güvenli sistem ayarlarını değiştirme izni verir. Normal uygulamalar tarafından kullanılamaz.</string>
+    <string name="permdesc_useHardwareFramework">Uygulamanın LunarisAOSP donanım altyapısına erişimine izin verir.</string>
+    <string name="permlab_writeSettings">LunarisAOSP sistem ayarlarını değiştir</string>
+    <string name="permdesc_writeSettings">Bir uygulamaya LunarisAOSP sistem ayarlarını değiştirme izni verir.</string>
+    <string name="permlab_writeSecureSettings">LunarisAOSP güvenli sistem ayarlarını değiştir</string>
+    <string name="permdesc_writeSecureSettings">Bir uygulamaya LunarisAOSP güvenli sistem ayarlarını değiştirme izni verir. Normal uygulamalar tarafından kullanılamaz.</string>
     <string name="profileNameDefault">Varsayılan</string>
     <string name="profileNameWork">İş</string>
     <string name="profileNameHome">Ev</string>
@@ -52,9 +52,9 @@
     <string name="permlab_manageRemotePrefs">uzak bağlantı ayarları</string>
     <string name="permdesc_manageRemotePrefs">Bir uygulamaya uzak bağlantı ayarlarını yönetme izni verir</string>
     <string name="build_date">İnşa tarihi</string>
-    <string name="lineage_api_level">LineageOS API düzeyi</string>
-    <string name="lineage_updates">LineageOS güncellemeleri</string>
-    <string name="lineage_version">LineageOS sürümü</string>
+    <string name="lineage_api_level">LunarisAOSP API düzeyi</string>
+    <string name="lineage_updates">LunarisAOSP güncellemeleri</string>
+    <string name="lineage_version">LunarisAOSP sürümü</string>
     <string name="lineage_vendor_security_patch">Üretici güvenlik yaması düzeyi</string>
     <string name="unknown">Bilinmiyor</string>
     <string name="app_killed_message">Uygulama sonlandırıldı</string>
