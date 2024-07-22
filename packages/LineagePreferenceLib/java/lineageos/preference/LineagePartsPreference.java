@@ -5,10 +5,14 @@
 package lineageos.preference;
 
 import android.content.Context;
+import android.content.res.TypedArray;
 import android.os.Bundle;
 import android.util.AttributeSet;
 
 import lineageos.preference.RemotePreference;
+
+import lineageos.preference.R;
+
 
 /**
  * A link to a remote preference screen which can be used with a minimum amount
@@ -33,14 +37,17 @@ public class LineagePartsPreference extends RemotePreference {
 
         updatePreference();
         setIntent(mPart.getIntentForActivity());
+        init(context, attrs);
     }
 
     public LineagePartsPreference(Context context, AttributeSet attrs, int defStyle) {
         this(context, attrs, defStyle, 0);
+        init(context, attrs);
     }
 
     public LineagePartsPreference(Context context, AttributeSet attrs) {
         this(context, attrs, androidx.preference.R.attr.preferenceStyle);
+        init(context, attrs);
     }
 
     @Override
@@ -67,6 +74,27 @@ public class LineagePartsPreference extends RemotePreference {
         if (isAvailable()) {
             setTitle(mPart.getTitle());
             setSummary(mPart.getSummary());
+        }
+    }
+
+    private void init(Context context, AttributeSet attrs) {
+        TypedArray b = context.obtainStyledAttributes(attrs, R.styleable.PreferenceLayout);
+        int position = b.getInt(R.styleable.PreferenceLayout_position, 3);
+        b.recycle();
+
+        switch (position) {
+            case 0: // Top
+                setLayoutResource(R.layout.tenx_preference_top);
+                break;
+            case 1: // Middle
+                setLayoutResource(R.layout.tenx_preference_middle);
+                break;
+            case 2: // Bottom
+                setLayoutResource(R.layout.tenx_preference_bottom);
+                break;
+            case 3: // Full
+                setLayoutResource(R.layout.tenx_preference);
+                break;
         }
     }
 }
