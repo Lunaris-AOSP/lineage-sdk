@@ -65,7 +65,7 @@ public abstract class SelfRemovingSwitchPreference extends SwitchPreferenceCompa
 
     private void init(Context context, AttributeSet attrs) {
         TypedArray b = context.obtainStyledAttributes(attrs, R.styleable.PreferenceLayout);
-        int position = b.getInt(R.styleable.PreferenceLayout_position, 3);
+        int position = b.getInt(R.styleable.PreferenceLayout_position, 4);
         b.recycle();
 
         switch (position) {
@@ -81,6 +81,8 @@ public abstract class SelfRemovingSwitchPreference extends SwitchPreferenceCompa
             case 3: // Full
                 setLayoutResource(R.layout.tenx_preference);
                 break;
+            case 4: // None
+                return;
         }
     }
 
