@@ -1285,7 +1285,7 @@ public final class LineageSettings {
         
         /** @hide */
         public static final Validator KEY_SHAKE_GESTURE_ACTION_VALIDATOR =
-                new InclusiveIntegerRangeValidator(0, 17);
+                new InclusiveIntegerRangeValidator(0, 18);
 
         /**
          * Whether to wake the screen with the home key, the value is boolean.
