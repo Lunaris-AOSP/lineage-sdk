@@ -29,6 +29,7 @@ public class DeviceKeysConstants {
         PLAY_PAUSE_MUSIC,
         TORCH,
         SCREENSHOT,
+        PARTIAL_SCREENSHOT,
         VOLUME_PANEL,
         CLEAR_ALL_NOTIFICATIONS,
         NOTIFICATIONS,
