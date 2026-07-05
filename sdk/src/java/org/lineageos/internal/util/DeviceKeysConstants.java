@@ -34,7 +34,8 @@ public class DeviceKeysConstants {
         CLEAR_ALL_NOTIFICATIONS,
         NOTIFICATIONS,
         QS_PANEL,
-        RINGER_MODES;
+        RINGER_MODES,
+        AMBIENT_DISPLAY;
 
         public static Action fromIntSafe(int id) {
             if (id < NOTHING.ordinal() || id > Action.values().length) {

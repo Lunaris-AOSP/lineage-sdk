@@ -374,7 +374,7 @@ public final class LineageSettings {
             new InclusiveIntegerRangeValidator(0, 86400);
 
     private static final Validator sHardwareKeyActionvalidator =
-            new InclusiveIntegerRangeValidator(0, 19);
+            new InclusiveIntegerRangeValidator(0, 20);
 
     private static final Validator sAlwaysTrueValidator = new Validator() {
         @Override
@@ -1098,6 +1098,7 @@ public final class LineageSettings {
          * 17 - Notifications
          * 18 - Toggle Qs Panel
          * 19 - Ringer Modes
+         * 20 - Ambient display
          */
         public static final String KEY_HOME_LONG_PRESS_ACTION = "key_home_long_press_action";
 
@@ -1286,7 +1287,7 @@ public final class LineageSettings {
         
         /** @hide */
         public static final Validator KEY_SHAKE_GESTURE_ACTION_VALIDATOR =
-                new InclusiveIntegerRangeValidator(0, 19);
+                new InclusiveIntegerRangeValidator(0, 20);
 
         /**
          * Whether to wake the screen with the home key, the value is boolean.
